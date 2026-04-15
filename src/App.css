@@ -53,3 +53,56 @@
   background: #FCE7F3;
   color: #9D174D;
 }
+
+/* banners */
+
+.banner {
+  font-size: 14px;
+  padding: 16px;
+  display: flex;
+  align-items: flex-start;
+  margin: 1rem 0;
+  min-width: 50vw;
+  width: fit-content;
+
+  p:first-of-type{
+    margin-top: 0;
+  }
+}
+
+.success {
+  background: #ECFDF5;
+  color: #047857;
+  .icon {
+    color: #34D399;
+  }
+}
+
+.warning {
+  background: #FFFBEB;
+  color: #92400E;
+  .icon {
+    color: #FBBF24;
+  }
+}
+
+.error {
+  background: #FEF2F2;
+  color: #92400E;
+  .icon {
+    color: #F87171;
+  }
+}
+
+.neutral {
+  background: #EFF6FF;
+  color: #1E40AF;
+  .icon {
+    color: #60A5FA;
+  }
+}
+
+.icon {
+  flex-basis:24px;
+  font-size: 18px;
+}

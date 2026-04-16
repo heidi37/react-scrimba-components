@@ -243,6 +243,10 @@
       margin: -150px 0 50px;
       object-position: 50% 35%; 
     }
+    @media(max-width: 384px){
+      width: 50vw;
+      height: 100px;
+    }
   }
 
 .testimonial-pic-name {

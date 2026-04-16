@@ -66,9 +66,9 @@
 .banners-container {
   display: flex;
   column-gap: 1.5rem;
-}
-
-.multi-line-banners, .single-line-banners {
+  @media(max-width: 600px){
+    flex-direction: column;
+  }
 }
 
 .banner {
@@ -129,6 +129,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 
 .card-icon {
@@ -167,4 +168,100 @@
 
 .card-body:hover, .banner:hover {
   box-shadow: 0px 4px 25px 0px #0000001A;
+}
+
+/* testimonials */
+
+.testimonial {
+  background: url('/src/assets/dot-pattern.png') no-repeat;
+  background-position: bottom left;
+  background-color: white;
+  max-width: 1358px;
+  text-align: center;
+  padding: 96px 39px 112px;
+  img {
+    width: 180px;
+    height: 32px; 
+  }
+  @media(max-width: 500px){
+    text-align: left;
+  }
+}
+
+.testimonial-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #111827;
+}
+
+.testimonial-quote {
+  color: #111827;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 500px;
+}
+
+.testimonial-slash {
+  color: #2E59F3;
+  font-size: 24px;
+}
+
+.testimonial-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6B7280;
+}
+
+.testimonial-pic {
+  background-color: #2545B8;
+  max-width: 1358px;
+  padding: 96px 39px 112px;
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+  height: 200px;
+  margin: 100px 0;
+  @media(max-width: 900px){
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+.quoted {
+    width: 364px;
+    height: 464px;
+    object-fit: cover;
+    box-shadow: 0px 10px 10px -5px #0000000A;
+    box-shadow: 0px 20px 25px -5px #0000001A;
+    border-radius: 12px;
+    margin: -125px 0 -150px;
+    @media(max-width: 900px){
+      width: 250px;
+      height: 200px;
+      margin: -150px 0 50px;
+      object-position: 50% 35%; 
+    }
+  }
+
+.testimonial-pic-name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+}
+
+.testimonial-pic-quote {
+  color: white;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 500px;
+}
+
+.testimonial-pic-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
 }

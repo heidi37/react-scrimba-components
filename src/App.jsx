@@ -2,6 +2,10 @@ import './App.css'
 import Badge from './components/Badge/Badge'
 import Banner from './components/Banner/Banner'
 import Card from './components/Card/Card'
+import Testimonial from './components/Testimonials/Testimonial'
+import TestimonialPic from './components/Testimonials/TestimonialPic'
+import logo from '../src/assets/workation-logo.png'
+import image from '../src/assets/quote-photo.jpg'
 
 function App() {
 
@@ -31,6 +35,11 @@ function App() {
           <Badge shape="pill" color="pink">Badge</Badge>&nbsp;
           <h2>Cards</h2>
           <Card title="Easy Deployment" text="Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis."></Card>
+          <h2>Testimonials</h2>
+          <h3>No Pics</h3>
+          <Testimonial logo={logo} quote="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis." name="May Andersons" title="Workcation, CTO"></Testimonial>
+          <h3>With Pics</h3>
+          <TestimonialPic image={image} quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit. " name="May Andersons" title="Workcation, CTO"></TestimonialPic>
           </div>
       
         <div className="col"> 

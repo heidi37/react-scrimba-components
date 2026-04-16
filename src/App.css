@@ -1,9 +1,16 @@
+.container{
+  display:flex;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+}
+
 /* badges */
 .badge {
   font-weight: 500;
   font-size: 14px;
   padding: 2px 12px;
   display: inline-block;
+  margin-top: .35rem;
 }
 
 .square {
@@ -56,14 +63,21 @@
 
 /* banners */
 
+.banners-container {
+  display: flex;
+  column-gap: 3rem;
+}
+
+.multi-line-banners, .single-line-banners {
+  max-width: 50%;
+}
+
 .banner {
   font-size: 14px;
   padding: 16px;
   display: flex;
   align-items: flex-start;
   margin: 1rem 0;
-  min-width: 50vw;
-  width: fit-content;
 
   p:first-of-type{
     margin-top: 0;
@@ -105,4 +119,5 @@
 .icon {
   flex-basis:24px;
   font-size: 18px;
+  margin-right: .5rem;
 }

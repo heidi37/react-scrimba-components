@@ -1,7 +1,7 @@
 import './App.css'
 import Badge from './components/Badge/Badge'
 import Banner from './components/Banner/Banner'
-import { FaCheckCircle, FaExclamationTriangle, FaWindowClose, FaInfoCircle } from "react-icons/fa"
+import Card from './components/Card/Card'
 
 function App() {
 
@@ -29,6 +29,8 @@ function App() {
           <Badge shape="pill" color="indigo">Badge</Badge>&nbsp;
           <Badge shape="pill" color="purple">Badge</Badge>&nbsp;
           <Badge shape="pill" color="pink">Badge</Badge>&nbsp;
+          <h2>Cards</h2>
+          <Card title="Easy Deployment" text="Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis."></Card>
           </div>
       
         <div className="col"> 
@@ -36,18 +38,18 @@ function App() {
           <div className="banners-container">
               <div className="multi-line-banners">
               <h3>Multi-line Banners</h3>
-              <Banner status="success" title="Congratulations!" icon={<FaCheckCircle />}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.</Banner>
-              <Banner status="warning" title="Attention" icon={<FaExclamationTriangle />}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam quo totam eius aperiam dolorum.</Banner>
-              <Banner status="error" title="There is a problem with your application" icon={<FaWindowClose />}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam quo totam eius aperiam dolorum.</Banner>
-              <Banner status="neutral" title="Update available" icon={<FaInfoCircle/>}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.</Banner>
+              <Banner status="success" title="Congratulations!">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.</Banner>
+              <Banner status="warning" title="Attention">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam quo totam eius aperiam dolorum.</Banner>
+              <Banner status="error" title="There is a problem with your application">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam quo totam eius aperiam dolorum.</Banner>
+              <Banner status="neutral" title="Update available">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.</Banner>
             </div>
             
             <div className="single-line-banners">
             <h3>Single-line Banners</h3>
-            <Banner status="success" title="Congratulations!" icon={<FaCheckCircle />}></Banner>
-            <Banner status="warning" title="Attention" icon={<FaExclamationTriangle />}></Banner>
-            <Banner status="error" title="There is a problem with your application" icon={<FaWindowClose />}></Banner>
-            <Banner status="neutral" title="Update available" icon={<FaInfoCircle/>}></Banner>
+            <Banner status="success" title="Congratulations!"></Banner>
+            <Banner status="warning" title="Attention"></Banner>
+            <Banner status="error" title="There is a problem with your application"></Banner>
+            <Banner status="neutral" title="Update available"></Banner>
             </div>
 
           </div>
